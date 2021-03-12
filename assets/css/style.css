@@ -1,0 +1,64 @@
+:root {
+    --important: #777696;
+    --darker: #3f3f4e;
+    --light: #c4c3d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--darker);
+    padding: 25px;
+}
+
+header h1 {
+    color: var(--light);
+    background-color: var(--darker);
+}
+
+header nav {
+    margin: 7px;
+    background-color: var(--darker);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bolder;
+    font-size: 24px;
+    color: var(--light);
+}
+
+header nav ul li a:hover {
+    color: var(--important);
+}
+
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.hero h2 {
+    background-color: var(--darker);
+    color: var(--light);
+    padding: 5px 8px 5px 8px;
+}
