@@ -2,9 +2,15 @@
     --important: #777696;
     --darker: #3f3f4e;
     --light: #c4c3d0;
+    --black: #000000;
+}
+
+body, html {
+    height: 100%;
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -20,6 +26,7 @@ header {
 header h1 {
     color: var(--light);
     background-color: var(--darker);
+    padding: 0px;
 }
 
 header nav {
@@ -54,11 +61,88 @@ header nav ul li a:hover {
     justify-content: flex-end;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 50px;
+    padding: 100px;
 }
 
 .hero h2 {
     background-color: var(--darker);
     color: var(--light);
     padding: 5px 8px 5px 8px;
+}
+
+.titles {
+    display: flex;
+    background-color: var(--darker);
+    padding: 5px;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+}
+
+.section-title-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: var(--darker);
+    border-right: 3px solid;
+    padding: 25px 25px 25px 5px;
+    margin: 25px;
+    width: fit-content;
+    float: right;
+}
+
+.section-title-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--darker);
+    border-left: 3px solid;
+    padding: 25px 5px 25px 25px;
+    margin: 25px;
+    width: fit-content;
+    float: left;
+}
+
+.primary-border {
+    border-color: var(--black);
+    height: 300px;
+}
+
+.description {
+    padding: 25px 20px 0 0;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bolder;
+    width: fit-content;
+}
+
+.description-left {
+    padding: 25px 0 0px 20px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#about-me {
+    display: flex;
+    width: 34%;
+    margin: 10px;
+    background-image: url("../images/aboutme-bg.jpg");
+}
+
+#my-work {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("../images/mywork-bg.jpeg");
+    background-position: center;
+    width: 34%;
+    margin: 10px;
+}
+
+#contact-me {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url("../images/contactme-bg.jpg");
+    width: 34%;
+    margin: 10px;
 }
