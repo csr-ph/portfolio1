@@ -7,10 +7,10 @@
 
 body, html {
     height: 100%;
+    width: 100%;
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -75,6 +75,7 @@ header nav ul li a:hover {
     background-color: var(--darker);
     padding: 5px;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     position: absolute;
 }
@@ -83,7 +84,7 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    color: var(--darker);
+    color: #FFFFFF;
     border-right: 3px solid;
     padding: 25px 25px 25px 5px;
     margin: 25px;
@@ -114,35 +115,41 @@ header nav ul li a:hover {
     font-size: 20px;
     font-weight: bolder;
     width: fit-content;
+    
 }
 
 .description-left {
     padding: 25px 0 0px 20px;
-    color: var(--black);
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: bolder;
 }
 
 #about-me {
     display: flex;
-    width: 34%;
+    width: 100%;
     margin: 10px;
     background-image: url("../images/aboutme-bg.jpg");
+    background-repeat: no-repeat;
+    backdrop-filter: blur;
 }
 
 #my-work {
     display: flex;
     justify-content: flex-end;
-    background-image: url("../images/mywork-bg.jpeg");
+    background-image: url("../images/mywork-bg.jpg");
+    background-image: 1900px;
     background-position: center;
-    width: 34%;
+    width: 100%;
     margin: 10px;
+    background-repeat: no-repeat;
 }
 
 #contact-me {
     display: flex;
     justify-content: flex-start;
     background-image: url("../images/contactme-bg.jpg");
-    width: 34%;
+    width: 100%;
     margin: 10px;
+    background-repeat: no-repeat;
 }
